@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+html,body{
+  
+    scroll-behavior: smooth;
+    font-family: 'Baloo Tamma 2', cursive;
+
+}
+
+/*-----COMMON ELEMENTS------*/
+.primary-btn{
+    padding: 10px 25px;
+    outline: none;
+    background: transparent;
+    border:1px solid #33d9b2;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: background-color .7s;
+   
+}
+.primary-btn:hover{
+    background-color:#33d9b2 ;
+    border: none;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;  
+}
+
+
+.square1{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #33d9b2;
+    border: 1px solid black;
+}
+.square2{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #33d9b2;
+    border: 1px solid black;
+}
+.square3{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #33d9b2;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------NAVIGATION MENU---------------*/
+#navigation-menu{
+    background-color: #33d9b2 !important;
+}
+
+#navigation-menu .navbar .navbar-brand{
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px black;
+}
+#navigation-menu .navbar .nav-item .nav-link{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+  
+    letter-spacing: 1.1px;
+    margin: 0 10px;
+    transition: transform 0.3s linear;
+}
+#navigation-menu .navbar .nav-item .nav-link:hover{
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+/*--------------HEADER SECTION------------*/
+#header{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)),url(headerbg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 50% 100%, 0 94%);
+}
+#header .col-12{
+    line-height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+#header .col-12 h2{
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-size: 40px;
+    font-weight: 900;
+}
+#header .col-12 p{
+    font-size: 20px;
+    color: white;
+   
+}
+#header .col-12 p:after{
+    content: "";
+    animation: jobs 05s infinite linear;
+    position: relative;
+    left: 5px;
+    color: #33d9b2;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+@keyframes jobs{
+    0%{
+     content:"UX/UI Designer";
+    }
+    50%{
+        content:"WEB DEVELOPER";
+    }
+    100%{
+        content: "FREELANCER";
+    }
+}
+
+
+
+
+
+
+/*------------ABOUT SECTION---------------*/
+#about{
+    padding: 60px 0;
+}
+#about .about-text{
+    
+
+}
+#about .about-text h2{
+    font-size: 30px;
+    color: #ff5e57;
+    text-shadow: 1px 2px 2px black;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+#about .about-text p{
+    line-height: 50px;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+    text-align: justify;
+}
+#about .about-img{
+    
+
+}
+#about .about-img img{
+    border-radius: 50px;
+    border: 2px solid #33d9b2;
+    animation: aboutimg 3s infinite linear ;
+    animation-direction: alternate-reverse;
+    transition: transform 1s;
+}
+@keyframes aboutimg{
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------SKILLS SECTION----------------*/
+#skills{
+    padding: 60px 0;
+    
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(services.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#skills h2{
+    color: #33d9b2;
+    text-shadow: 1px 2px 2px black;
+    font-size: 30px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+#skills .skills{
+    background-color: #f5f6fa;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px  black;
+    transition: transform 0.7s;
+    width: 200px;
+}
+#skills .skills:hover{
+    transform: translateY(-10px);
+}
+#skills .skills h5{
+    margin: 5px 0;
+    color: #ff5e57;
+    text-shadow: 2px 1px 3px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------TEAM SECTION----------------*/
+#team{
+    padding: 50px 0;
+    background: radial-gradient(#ecf0f1, white);
+    clip-path: polygon(100% 100%, 100% 5%, 50% 0, 50% 0, 0 5%, 0 100%);
+
+}
+#team h2{
+    color: #ff5e57;
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+#team h5{
+    color: #33d9b2;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#team h4{
+    color: #ff5e57;
+    text-shadow: 2px 1px 3px white;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+}
+#team .team{
+    background-color:#f5f6fa;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px black;
+}
+#team img{
+    border-radius: 40px;
+    transition: transform 0.8s;
+}
+#team img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/*-----------WORK WITH ME SECTION--------------*/
+#workwithme{
+    padding: 50px 0;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url(workwithme.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#workwithme h4{
+    color: white;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+/*-----------------WORKS SECTION---------------*/
+#works{
+    padding: 60px 0;
+    background: radial-gradient(#ecf0f1, white);
+}
+#works h2{
+    color: #33d9b2;
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+#works img{
+    border-bottom-left-radius:40px;
+    transition: transform 0.7s;
+}
+#works img:hover{
+    filter: grayscale(1000);
+    transform: scale(0.7);
+}
+#works a{
+    background-color: #ff5e57;
+    border: 1px solid #ff5e57;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    transition: background-color 0.7s;
+}
+#works a:hover{
+ background-color: transparent;
+ color: black;
+ 
+
+}
+
+
+
+
+
+/*-------------TESTIMONIALS SECTION--------------*/
+#testimonials{
+    padding: 60px 0;
+    background: radial-gradient(white,#33d9b2);
+    
+}
+#testimonials h2 {
+color: #ff5e57;
+text-shadow: 1px 1px 2px black;
+font-weight: 700;
+font-size: 30px;
+letter-spacing: 3px;
+position: relative;
+}
+
+#testimonials h3{
+    color: #ff5e57;
+    font-weight: 700;
+}
+#testimonials p{
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 400;
+}
+#testimonials .testimonials {
+    border-bottom: 2px solid #ff5e57;
+    border-left: 2px solid #ff5e57;
+    width: 230px;
+}
+#testimonials .testimonials:hover{
+    border-bottom:none;
+    border-left:none;
+    border-top: 2px solid #ff5e57;
+    border-right: 2px solid #ff5e57;
+}
+#testimonials .testimonials h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/*------------SOCIAL SECTION-------------*/
+#social{
+    padding: 50px 0;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8));
+}
+#social h2{
+    color: #33d9b2;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 3px;
+    
+}
+
+#social a{
+      margin: 15px 15px;
+    
+}
+#social img{
+    width: 50px;
+    margin-top: 10px;
+    transition: transform 0.7s;
+}
+#social img:hover{
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------CONTACT SECTION---------------*/
+#contact{
+    padding: 50px 0;
+}
+#contact h3{
+    color: #ff5e57;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+#contact form small{
+    letter-spacing: 4px;
+}
+#contact form input{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 20px 0;
+    border: 1px solid #33d9b2;
+    border-radius: 40px;
+    outline: none;
+}
+#contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 20px 0;
+    border: 1px solid #33d9b2;
+    
+    outline: none;
+    min-height: 200px;
+}
+#contact form .form-submit{
+    background-color: #33d9b2;
+    font-weight: 800;
+    letter-spacing: 3px;
+    transition: background 0.7s;
+}
+#contact form .form-submit:hover{
+    background: transparent;
+}
+
+#contact form textarea:focus{
+    box-shadow: 1px 1px 5px #33d9b2;
+}
+#contact form input:focus{
+    box-shadow: 1px 1px 5px #33d9b2;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------FOOTER SECTION---------------*/
+#footer{
+    padding: 10px 0;
+    background-color: #33d9b2;
+}
+#footer span{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+
+
+/*----------------SCROLL UP BUTTON-------------------*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: #ff5e57;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.7s ;
+  }
+  
+  #myBtn:hover {
+    background-color: white;
+  }
+
+
+
+
+
+
+
+
+/*-----------RESPONSIVE DESIGN------------------*/
+@media only screen and (max-width:300px){
+
+
+    #header .col-12 h2{
+        font-size: 25px;
+    }
+
+    #header .col-12 p:after{
+      font-size: 20px;        
+    }
+    #about .about-text{
+        text-align: center;
+    }
+    
+   #about .about-text p{
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-align: justify;
+  } 
+  #works h2{
+    font-size: 20px;
+    
+  }
+   #testimonials h2 {
+    
+    font-size: 17px;
+    letter-spacing: 3px;
+    
+    }
+    #social h2{
+       
+        font-size: 15px;
+        letter-spacing: 3px;
+       
+    }
+
+    #social a{
+        margin: 0px 5px;
+      
+  }
+    #social img{
+        width: 15px;
+        margin-top: 10px;
+        
+    }
+    #contact h3{
+        
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    #contact form small{
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    #footer span{
+        color: white;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    #social{
+        padding: 10px 0;
+      
+    }
+    .navbar-toggler{
+        font-size: 10px;
+        margin-right: 1px;
+    }
+
+}
+
+@media (min-width:301px)and (max-width:450px){
+    #social img{
+        width: 20px;
+    margin-top: 10px;
+        
+    }
+}
